@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class coul_and_money : MonoBehaviour
 {
-    public static int couls = 10;
+    public static double couls = 10;
     public static int money = 10;
     private void Start()
     {
@@ -14,7 +14,7 @@ public class coul_and_money : MonoBehaviour
         if (couls >= seller_list.price_saller_1_)
         {
             {
-                couls = couls - seller_list.price_saller_1_;
+                couls -= seller_list.price_saller_1_;
                 money += seller_list.money_saller_1_;
                 Debug.Log(couls);
                 Debug.Log(money);

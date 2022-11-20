@@ -31,7 +31,7 @@ public class moveLVL : MonoBehaviour
                     Vector3 x_up = new Vector3(x, 0f, z);
                     player.transform.position = x_up;
                     check_step.Invoke();
-                    if (coninfo[(int)x][(int)z] == 5)
+                    if (coninfo[(int)x][(int)z] == 2)
                     {
                         _Coul.Invoke();
                     }
@@ -64,7 +64,7 @@ public class moveLVL : MonoBehaviour
                     Vector3 x_down = new Vector3(x, 0f, z);
                     player.transform.position = x_down;
                     check_step.Invoke();
-                    if (coninfo[(int)x][(int)z] == 5)
+                    if (coninfo[(int)x][(int)z] == 2)
                     {
                         _Coul.Invoke();
                     }
@@ -96,7 +96,7 @@ public class moveLVL : MonoBehaviour
                     Vector3 z_left = new Vector3(x, 0f, z);
                     player.transform.position = z_left;
                     check_step.Invoke();
-                    if (coninfo[(int)x][(int)z] == 5)
+                    if (coninfo[(int)x][(int)z] == 2)
                     {
                         _Coul.Invoke();
                     }
@@ -127,7 +127,7 @@ public class moveLVL : MonoBehaviour
                     Vector3 z_rite = new Vector3(x, 0f, z);
                     player.transform.position = z_rite;
                     check_step.Invoke();
-                    if (coninfo[(int)x][(int)z] == 5)
+                    if (coninfo[(int)x][(int)z] == 2)
                     {
                         _Coul.Invoke();
                     }

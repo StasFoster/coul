@@ -12,10 +12,6 @@ public class generatorLVL : MonoBehaviour
     public static GameObject[,] set;
     public static string _start = "";
     public static int[][] con { get; set; }
-    private void Start()
-    {
-        steper = lvlinfo.step;
-    }
     public void Update()
     {
         if (_start == lvlinfo.key)
@@ -26,6 +22,10 @@ public class generatorLVL : MonoBehaviour
             Struct_LVL s_l = JsonConvert.DeserializeObject<Struct_LVL>(json);
             steper = lvlinfo.step;
             con = s_l.stuct;
+            if(con == null)
+            {
+                Debug.Log("nulllll");
+            }
             moveLVL.coninfo = s_l.stuct;
             _x = lvlinfo.xint;
             _z = lvlinfo.zint;
@@ -40,6 +40,7 @@ public class generatorLVL : MonoBehaviour
             {
                 for (float z = 0f; z < lvlinfo.zint; z++)
                 {
+                    Debug.Log("1");
                     if (con[(int)x][(int)z] == 1)
                     {
                         GameObject s = Instantiate(_1_, new Vector3(x, 0f, z), Quaternion.identity);

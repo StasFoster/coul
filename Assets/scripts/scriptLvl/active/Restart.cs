@@ -8,6 +8,7 @@ public class Restart : MonoBehaviour
 {
     public Button restsrt;
     public GameObject gameover, gen, move;
+    public lvls lvl;
 
     void Start()
     {
@@ -17,7 +18,9 @@ public class Restart : MonoBehaviour
     {
         gameover.SetActive(false);
         move.SetActive(false);
-        gen.SetActive(true); 
+        foreach (GameObject i in generatorLVL.set) Destroy(i);
+        generatorLVL._start = lvl.key;
+        moveLVL.qwe = 1;
     }
   
 

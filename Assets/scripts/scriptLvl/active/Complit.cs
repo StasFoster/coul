@@ -5,7 +5,7 @@ using System;
 
 public class Complit : MonoBehaviour
 {
-    public GameObject Move;
+    public GameObject Move, gameov;
     private void Start()
     {
         moveLVL._complit += stop;
@@ -14,6 +14,7 @@ public class Complit : MonoBehaviour
     void stop()
     {
         Move.SetActive(false);
+        gameov.SetActive(false);
     }
     void stop_2()
     {
