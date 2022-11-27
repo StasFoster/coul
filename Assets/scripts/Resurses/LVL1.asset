@@ -16,7 +16,7 @@ MonoBehaviour:
   _step: 21
   _xint: 11
   _zint: 12
+  _key: 1
   _xstart: 7
   _zstart: 0
   _path: Struct_LVL1.json
-  _key: p

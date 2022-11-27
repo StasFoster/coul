@@ -6,7 +6,7 @@ public class minusvinoslivost : MonoBehaviour
 {
     private void Start()
     {
-        StartCoroutine(Vinoslivostminus());
+      //  StartCoroutine(Vinoslivostminus());
     }
 
 

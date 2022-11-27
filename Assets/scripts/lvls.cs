@@ -9,11 +9,11 @@ using System;
 public class lvls : ScriptableObject
 { 
     [SerializeField] private Vector3 _startpos;
-    [SerializeField] private int _step, _xint, _zint;
+    [SerializeField] private int _step, _xint, _zint, _key;
     [SerializeField] private float _xstart, _zstart;
-    [SerializeField] private string _path, _key;
+    [SerializeField] private string _path;
     public string path => this._path;
-    public string key => this._key;
+    public int key => this._key;
     public int step => this._step;
     public int xint => this._xint;
     public int zint => this._zint;

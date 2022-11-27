@@ -5,13 +5,13 @@ using UnityEngine;
 public class reskils : MonoBehaviour
 {
     public GameObject promt;
-    public static bool F;
+  //  public static bool F;
     private void OnTriggerStay(Collider other)
     {
         StartCoroutine(promt_());
         if (Input.GetKeyDown(KeyCode.E))
         {
-            F = true;
+         //   F = true;
             skils.energi = referens.v;
             skils.vinosslivost = referens.q;
         }
