@@ -15,7 +15,7 @@ public class LVLCOUL : coul_and_money
    
     public void take_coul()
     {
-        couls += 0.5;
+        couls += 1;
         moveLVL.coninfo[(int)moveLVL.x][(int)moveLVL.z] = 1;
         Destroy(generatorLVL.set[(int)moveLVL.x, (int)moveLVL.z]);
         generatorLVL.set[(int)moveLVL.x, (int)moveLVL.z] = Instantiate(pol, new Vector3(moveLVL.x, 0f, moveLVL.z), Quaternion.identity);

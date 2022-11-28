@@ -16,10 +16,8 @@ public class generatorLVL : MonoBehaviour
     {
         if (_start == lvlinfo.key)
         {
-            string path = Environment.CurrentDirectory + "\\Assets\\Data_file\\" + lvlinfo.path;
-            StreamReader text = new StreamReader(path);
-            string json = text.ReadToEnd();
-            Struct_LVL s_l = JsonConvert.DeserializeObject<Struct_LVL>(json);
+            TextAsset JSONTEXT = Resources.Load<TextAsset>(lvlinfo.path);
+            Struct_LVL s_l = JsonConvert.DeserializeObject<Struct_LVL>(JSONTEXT.text);
             steper = lvlinfo.step;
             con = s_l.stuct;
             moveLVL.coninfo = s_l.stuct;
@@ -31,12 +29,10 @@ public class generatorLVL : MonoBehaviour
             muve_pers_2_.SetActive(true);
             pers_1_.SetActive(false);
             moveLVL.qwe = 1;
-            Debug.Log("√≈Õ≈–¿“Œ– ¬ Àﬁ◊®Õ");
             for (float x = 0f; x < lvlinfo.xint; x++)
             {
                 for (float z = 0f; z < lvlinfo.zint; z++)
                 {
-                 //s   Debug.Log("1");
                     if (con[(int)x][(int)z] == 1)
                     {
                         GameObject s = Instantiate(_1_, new Vector3(x, 0f, z), Quaternion.identity);

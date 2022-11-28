@@ -16,7 +16,7 @@ MonoBehaviour:
   _step: 5
   _xint: 3
   _zint: 3
+  _key: 6
   _xstart: 1
   _zstart: 0
-  _path: Struct_LVL6.json
-  _key: q
+  _path: Struct_LVL6
