@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ee68555f208d948926343873b7329f, type: 3}
   m_Name: LVL4
   m_EditorClassIdentifier: 
-  _startpos: {x: 3, y: 0, z: 1}
+  _startpos: {x: 10, y: 0, z: 4}
   _step: 100
-  _xint: 5
-  _zint: 6
+  _xint: 11
+  _zint: 12
   _key: 4
-  _xstart: 3
-  _zstart: 1
+  _xstart: 10
+  _zstart: 4
   _path: Struct_LVL4

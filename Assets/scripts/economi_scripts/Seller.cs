@@ -15,8 +15,11 @@ public class Seller : MonoBehaviour
     {
         if(skils.iQ >= IQ)
         {
-            coul_and_money.couls -= coal_re;
-            coul_and_money.money += Money_re;
+            if (coul_and_money.couls >= coal_re)
+            {
+                coul_and_money.couls -= coal_re;
+                coul_and_money.money += Money_re;
+            }
         }
     }
 }
