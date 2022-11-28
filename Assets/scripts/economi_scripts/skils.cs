@@ -7,7 +7,7 @@ public class skils : MonoBehaviour
     public static int energi = 1;
     public static int iQ = 1;
     public static int vinosslivost = 1;
-    int price_energi = 2; int price_vinoslivost = 1; int price_iQ = 3;
+    int price_energi = 2; int price_stamina = 1; int price_iQ = 3;
     public void up_energi()
     {
         if (coul_and_money.money >= price_energi)
@@ -18,9 +18,9 @@ public class skils : MonoBehaviour
     }
     public void up_stamina()
     {
-        if (coul_and_money.money >= price_vinoslivost)
+        if (coul_and_money.money >= price_stamina)
         {
-            coul_and_money.money -= price_vinoslivost;
+            coul_and_money.money -= price_stamina;
             referens.q++;
         }
     }

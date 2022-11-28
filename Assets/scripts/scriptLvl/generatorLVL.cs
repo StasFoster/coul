@@ -8,7 +8,7 @@ public class generatorLVL : MonoBehaviour
 {
     public lvls lvlinfo;
     public static int _x, _z, steper;
-    public GameObject _0_, _1_, _2_, _3_, _4_, _5_, _10_, pers_2_, muve_pers_2_, pers_1_, gen;
+    public GameObject _0_, _1_, _2_, _3_, _4_, _5_, _10_, _6_, pers_2_, muve_pers_2_, pers_1_, gen;
     public static GameObject[,] set;
     public static int _start = 0;
     public static int[][] con { get; set; }
@@ -71,8 +71,14 @@ public class generatorLVL : MonoBehaviour
                         GameObject s = Instantiate(_10_, new Vector3(x, 0f, z), Quaternion.identity);
                         set[(int)x, (int)z] = s;
                     }
+                    if (con[(int)x][(int)z] == 6)
+                    {
+                        GameObject s = Instantiate(_6_, new Vector3(x, 0f, z), Quaternion.identity);
+                        set[(int)x, (int)z] = s;
+                    }
                 }
             }
+            Resources.UnloadAsset(JSONTEXT);
             _start = 0;
             gen.SetActive(false);
         }

@@ -19,6 +19,7 @@ public class Restart : MonoBehaviour
         gameover.SetActive(false);
         move.SetActive(false);
         foreach (GameObject i in generatorLVL.set) Destroy(i);
+        gen.SetActive(true);
         generatorLVL._start = lvl.key;
         moveLVL.qwe = 1;
     }

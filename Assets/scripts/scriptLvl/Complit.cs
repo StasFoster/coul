@@ -9,6 +9,7 @@ public class Complit : MonoBehaviour
     private void Start()
     {
         moveLVL._complit += stop;
+        moveLVL._Fall += Over;
         setstep.complit += stop_2;
     }
     void stop()
@@ -18,6 +19,11 @@ public class Complit : MonoBehaviour
     }
     void stop_2()
     {
+        Move.SetActive(false);
+    }
+    void Over()
+    {
+        gameov.SetActive(true);
         Move.SetActive(false);
     }
 }

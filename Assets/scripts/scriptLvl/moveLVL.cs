@@ -10,7 +10,7 @@ public class moveLVL : MonoBehaviour
     public static float x,z;
     public static float qwe = 0;
     public GameObject player, complit_lvl;
-    public static Action _Coul, check_step, _complit;
+    public static Action _Coul, check_step, _complit, _Fall;
     public static UnityEvent q;
     void Update()
     {
@@ -39,6 +39,10 @@ public class moveLVL : MonoBehaviour
                     {
                         complit_lvl.SetActive(true);
                         _complit.Invoke();
+                    }
+                    if (coninfo[(int)x][(int)z] == 6)
+                    {
+                        _Fall.Invoke();
                     }
                 }
                 else
@@ -71,7 +75,12 @@ public class moveLVL : MonoBehaviour
                     if (coninfo[(int)x][(int)z] == 10)
                     {
                         complit_lvl.SetActive(true);
-                    }   
+                    }
+                    if (coninfo[(int)x][(int)z] == 6)
+                    {
+                        _Fall.Invoke();
+                    }
+
                 }
                 else
                 {
@@ -104,6 +113,10 @@ public class moveLVL : MonoBehaviour
                     {
                         complit_lvl.SetActive(true);
                     }
+                    if (coninfo[(int)x][(int)z] == 6)
+                    {
+                        _Fall.Invoke();
+                    }
                 }
                 else
                 {
@@ -134,6 +147,10 @@ public class moveLVL : MonoBehaviour
                     if (coninfo[(int)x][(int)z] == 10)
                     {
                         complit_lvl.SetActive(true);
+                    }
+                    if (coninfo[(int)x][(int)z] == 6)
+                    {
+                        _Fall.Invoke();
                     }
                 }
                 else

@@ -8,14 +8,17 @@ public class getingLVL : MonoBehaviour
     public GameObject generit;
     public static Action sas;
     public int minus;
-    public int imput;
+    public int input;
     private void OnTriggerStay(Collider other)
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-          //  skils.energi -= minus; 
-            generit.SetActive(true);
-            generatorLVL._start = imput;                          
+            if (skils.energi >= minus)
+            {
+                generit.SetActive(true);
+                generatorLVL._start = input;
+                skils.energi -= minus;
+            }
         }
     }
    

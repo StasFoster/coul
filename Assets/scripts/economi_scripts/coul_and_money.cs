@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class coul_and_money : MonoBehaviour
 {
-    public static double couls = 10;
-    public static int money = 10;
+    public static double couls = 0;
+    public static int money = 0;
 }
