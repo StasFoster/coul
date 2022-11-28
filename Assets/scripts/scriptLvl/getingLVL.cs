@@ -13,7 +13,7 @@ public class getingLVL : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            skils.energi -= minus; 
+          //  skils.energi -= minus; 
             generit.SetActive(true);
             generatorLVL._start = imput;                          
         }

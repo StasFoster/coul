@@ -74,6 +74,7 @@ public class generatorLVL : MonoBehaviour
                 }
             }
             _start = 0;
+            gen.SetActive(false);
         }
     }
 }
