@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ee68555f208d948926343873b7329f, type: 3}
+  m_Name: LVL5
+  m_EditorClassIdentifier: 
+  _startpos: {x: 5, y: 0, z: 0}
+  _step: 100
+  _xint: 14
+  _zint: 15
+  _key: 5
+  _xstart: 5
+  _zstart: 0
+  _path: Struct_LVL5
